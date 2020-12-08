@@ -1,8 +1,8 @@
 # scrapySeleniumDownloaderMiddleware
  scrapy 异步 并发 selenium chrome 下载中间件(scrapy  asynchronous selenium chrome downloaderMiddleware )
 ## 介绍(Introduction)
-scarpyseleniumDownloaderMiddleware 是一个scrapy可以使用的selenium进行异步下载的下载中间件,只需要像使用其他下载中间件一样使用它即可,但与普通下载中间件不同的是使用了twisted的refered对象和线程池来实现 下载中间件在scrapy中的异步化.
-ScarphyseleniumDownloaderMiddleware is a downloadermiddleware which can be downloaded asynchronously by selenium. It can be used just like other scrapy download middleware. But different from the common scrapy download middleware, it uses twisted referenced object and thread pool to realize asynchronous downloading Middleware in scrapy
+scarpyseleniumDownloaderMiddleware 是一个scrapy可以使用的selenium进行异步下载的下载中间件,只需要像使用其他下载中间件一样使用它即可,但与普通下载中间件不同的是使用了twisted的defere对象和线程池来实现 下载中间件在scrapy中的异步化.
+ScarphyseleniumDownloaderMiddleware is a downloadermiddleware which can be downloaded asynchronously by selenium. It can be used just like other scrapy download middleware. But different from the common scrapy download middleware, it uses twisted defere object and thread pool to realize asynchronous downloading Middleware in scrapy
 
 ## 前提(Precondition)
 scrapySeleniumDownloaderMiddleware需要你有可以搭建起基本的scrapy和selenium项目的环境和能力,本项目只是将selenium依据scrapy的下载中间件机制融合到scrapy当中 
