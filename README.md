@@ -7,7 +7,7 @@ ScarphyseleniumDownloaderMiddleware is a downloadermiddleware which can be downl
 ## 前提(Precondition)
 scrapySeleniumDownloaderMiddleware需要你有可以搭建起基本的scrapy和selenium项目的环境和能力,本项目只是将selenium依据scrapy的下载中间件机制融合到scrapy当中 
 ScrapseleniumDownloaderMiddleware requires you to have the environment and ability to build basic scrapy and selenium projects. This project only integrates selenium's download mechanism into scrapy.
-测试环境(testing environment) `python 3.8` `scarpy 2.4.1`  `selenium 3.141.0
+测试环境(testing environment) `python 3.8` `scarpy 2.4.1`  `selenium 3.141.0`
 ## 使用流程(Use Flow)
 1. 将scrapySeleniumDownloaderMiddleware 拷贝到 scrapy 项目中(Copy the scrapyselenium downloadermiddleware into the scrapy project)
 2. 在settings.py中启用该中间件( enable the middleware in settings.py)
