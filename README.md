@@ -62,5 +62,4 @@ def driverCallback(driver):
   #driverOperation....
 ```
 6. 本中间件只支持已系统注册的chrome浏览器作为selenium的浏览器,如需自定义请修改scrapySeleniumDownloaderMiddleware.seleniumDownloaderMiddleware的类方法createChromeDriver方法
-<br>
 (This middleware only supports Chrome browser registered by the system as selenium's browser. If you need to customize it, please modify the method createchromedriver of scrapselenium DownloaderMiddleware.seleniumDownloaderMiddleware  class 
