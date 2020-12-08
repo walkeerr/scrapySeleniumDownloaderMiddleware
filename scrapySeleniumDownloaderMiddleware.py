@@ -224,7 +224,8 @@ class SeleniumDownloaderMiddleware:
             if(self.seleniumExceptException):
                 d.callback(result=request)
             else:
-                raise e
+                d.errback(fail=e)
+                #raise e
 
     def process_request(self, request, spider):
         if  request.meta.get("selemiumRequest",False) :
