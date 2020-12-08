@@ -1,7 +1,7 @@
 # scrapySeleniumDownloaderMiddleware
- scrapy 异步 并发 selenium chrome 下载中间件(scrapy  asynchronous selenium chrome downloaderMiddleware )
+ scrapy 异步 并发 selenium chrome 下载中间件(scrapy  asynchronous concurrent selenium chrome downloaderMiddleware )
 ## 介绍(Introduction)
-scarpyseleniumDownloaderMiddleware 是一个scrapy可以使用的selenium进行异步下载的下载中间件,只需要像使用其他下载中间件一样使用它即可,但与普通下载中间件不同的是使用了twisted的defere对象和线程池来实现 下载中间件在scrapy中的异步化.
+scarpyseleniumDownloaderMiddleware 是一个scrapy可以使用的selenium进行异步下载的下载中间件,只需要像使用其他下载中间件一样使用它即可,但与普通下载中间件不同的是它使用了twisted的defere对象和线程池来实现下载中间件在scrapy中的异步化.
 <br>
 ScarphyseleniumDownloaderMiddleware is a downloadermiddleware which can be downloaded asynchronously by selenium. It can be used just like other scrapy download middleware. But different from the common scrapy download middleware, it uses twisted defere object and thread pool to realize asynchronous downloading Middleware in scrapy
 
@@ -62,4 +62,4 @@ def driverCallback(driver):
   #driverOperation....
 ```
 6. 本中间件只支持已系统注册的chrome浏览器作为selenium的浏览器,如需自定义请修改scrapySeleniumDownloaderMiddleware.seleniumDownloaderMiddleware的类方法createChromeDriver方法
-(This middleware only supports Chrome browser registered by the system as selenium's browser. If you need to customize it, please modify the method createchromedriver of scrapselenium DownloaderMiddleware.seleniumDownloaderMiddleware  class 
+  <br>(This middleware only supports Chrome browser registered by the system as selenium's browser. If you need to customize it, please modify the method createchromedriver of scrapselenium DownloaderMiddleware.seleniumDownloaderMiddleware  class 
